@@ -32,7 +32,7 @@ ENDIF()
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake_modules")
 
 # Find Eigen 3 (dependency)
-find_package(Eigen3 3.3.0 REQUIRED)
+find_package(Eigen3 REQUIRED) # 3.3.0 --> 3.3.7
 
 # Define interface library target
 add_library(sophus INTERFACE)
