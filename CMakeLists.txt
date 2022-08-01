@@ -215,6 +215,10 @@ if(realsense2_FOUND)
     target_link_libraries(mono_realsense_D435i ${PROJECT_NAME})
 endif()
 
+# test myvideo
+add_executable(MyVideo Examples/Monocular/MyVideo.cpp)
+target_link_libraries(MyVideo ${PROJECT_NAME})
+
 #Monocular inertial examples
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular-Inertial)
 
